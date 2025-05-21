@@ -20,7 +20,7 @@
                                 } 
                             }
                         }
-                        <p>({{item.stars}})</p>
+                        <p [ngStyle]="{'color': item.stars > 4 ? fontColorGood : fontColorBad }">({{item.stars}})</p>
                     </div>
                 </div>
                 <div><b>Art:</b><br>{{item.genus}}</div>
