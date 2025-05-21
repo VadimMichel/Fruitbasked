@@ -63,4 +63,11 @@ export class FruitlistComponent {
       reviews:[{name: "Kevin W.", text: "Ganz gut in der Regel!"},{name: "Oliver J.", text: "Absoluter Favorit beim Frühstück"}],
     },
   ]
+
+ sendCommit(comment:string, index:number){
+  this.fruitlist[index].reviews.push({
+    name: "Vadim",
+    text: comment
+  })
+ }
 }
